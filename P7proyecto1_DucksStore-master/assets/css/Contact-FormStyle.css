@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFEFC8;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #FFD95F;
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.duckLogo {
+  width: 80px;
+  height: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+main {
+  /*width: 100%;*/
+  max-width: 100%;
+  display: flex; /*necesario para mobile first view*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+
+.background-container {
+  background-image: url('../img/fondo-contacto.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 414px;
+  height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Capa para opacidad encima de la imagen */
+/* con fondo blanco semi-transparente */
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); 
+  z-index: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+button {
+  background-color: #D70654;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color: #aa0540;
+}
+
+.footer {
+  background-color: #FFD95F;
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.companyInfo .duckLogo {
+  width: 60px;
+}
+
+.companyData p {
+  font-size: 14px;
+}
+
+.socialNet p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.column {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/*Tablet*/
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: #D70654;
+    color: #e0f2f1;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    background-color: #D70654;
+    gap: 1rem;
+  }
+
+  .menu a {
+    color: #e0f2f1;
+  }
+
+  .footer {
+    background-color: #D70654;
+    color: #e0f2f1;
+  }
+}

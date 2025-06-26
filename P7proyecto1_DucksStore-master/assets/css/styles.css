@@ -1,0 +1,44 @@
+header, footer {
+    background-color: #ffd95f;
+}
+main{
+    background-color: bisque;
+    height: 60vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.duckLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    font-size:large;
+    margin: 45px 0;
+}
+
+ul li{
+    margin-right: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.companyInfo {
+    display: flex;
+}
+.companyData {
+    display: flex;
+    flex-direction: column;
+}
