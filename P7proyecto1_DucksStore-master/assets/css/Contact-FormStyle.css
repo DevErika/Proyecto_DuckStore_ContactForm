@@ -131,8 +131,7 @@ button:hover {
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 20px;
 }
 
@@ -149,11 +148,10 @@ button:hover {
 
 .companyData p {
   font-size: 14px;
+  margin: 0; 
 }
 .slogan {
-  width: 100%;
   text-align: center;
-  margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
   color: #333;
@@ -170,27 +168,12 @@ button:hover {
 }
 
 
-.socialNet .icons {
-  display: flex;
-  gap: 10px;
-}
-
-
-
 .socialNet .icons img {
   width: 32px;
   height: 32px;
   cursor: pointer;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.socialNet .icons img:hover {
-  transform: scale(1.1);
-}
-
-.column {
-  width: 100%;
+ 
+  
 }
 
 
@@ -210,7 +193,7 @@ button:hover {
     margin-top: 15px;
   }
 
-  .socialNet {
+.socialNet {
     align-items: center;
     text-align: center;
     width: 100%;
